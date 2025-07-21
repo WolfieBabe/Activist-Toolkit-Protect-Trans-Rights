@@ -1,0 +1,81 @@
+<html>
+  <head>
+    
+    <title>Resources</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+  </head>
+  
+  <body>
+    <nav> 
+      <div class="flexContainer" id="flexContainer-nav">
+        <div class="flexItem" id="flex-nav-right">
+          <ul id="nav-right-ul">
+            <li class="nav-right-li"><a href="https://activist-toolkit-starter-code.mattiesadler.repl.co/home.html">Home</a></li>
+            <li class="nav-right-li"><a href="https://activist-toolkit-starter-code.mattiesadler.repl.co/resources/resources.html">Resources</a></li>
+            <li class="nav-right-li"><a href="https://activist-toolkit-starter-code.mattiesadler.repl.co/about.html">About</a></li>
+<!--             <li class="nav-right-li"><a href="https://activist-toolkit-starter-code.mattiesadler.repl.co/about.html">More</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <br><br>
+    
+    <h1>Trans Bill Tracker</h1>
+    <br>
+    <div class="flexContainer" id='flexContainer-billTracker-txt'>
+      <div class="flexItem" id='flexItem-billTracker-txt'>
+        <p class="pText-resources">Trans Bill Tracker, <a href="https://twitter.com/tracktransbills?lang=en" alt="@TrackTransBills">@TrackTransBills</a> on Twitter, (shown below) is an amazing resource for the monitering of important bills governing transgender issues.</p>
+      </div>
+    </div>
+    <br>
+    <div class="flexContainer" id='flexContainer-billTracker-iframe'>
+      <div class="flexItem" id='flexItem-billTracker-iframe'>
+        <a class="twitter-timeline" data-width="1000px" data-height="600px" href="https://twitter.com/TrackTransBills?ref_src=twsrc%5Etfw" alt>Tweets by TrackTransBills</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+    </div>
+    
+    <br><br><br><br><br>
+    
+    <h1>Bill Message Generator</h1>
+    <br>
+    <p>Generate a custom message about a specific bill to your governer!</p>
+    <br><br>
+    <div id="txtInput-Container">
+      <div class ="txtInput-Item" id="txtInput-Item-1">
+        <label for="inputName">Your name:</label>
+        <input type="text" id="inputName">
+      </div>
+      <div class ="txtInput-Item" id="txtInput-Item-2">
+        <label for="inputLocation">Where you live:</label>
+        <input type="text" id="inputLocation">
+      </div>
+      <div class ="txtInput-Item" id="txtInput-Item-3">
+        <label for="inputBill">The bill you are writing to them about:</label>
+        <input type="text" id="inputBill"> 
+      </div>
+      <button id=billButton>Generate your message</button>
+    </div>
+
+    <br>
+    
+    <div id= "flexContainer-customMessage-desc" style="display: none">
+      <div id="flexItem-customMessage-desc">
+          <p id="txtOutput"></p>
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+
+</html>
